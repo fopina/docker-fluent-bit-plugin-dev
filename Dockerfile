@@ -1,5 +1,15 @@
 FROM debian:stretch as builder
 
+ARG BUILD_DATE
+ARG BUILD_VERSION
+
+LABEL maintainer="github.com/fopina"
+LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.build-date=$BUILD_DATE
+LABEL org.label-schema.vcs-url="https://github.com/fopina/docker-fluent-bit-plugin-dev"
+LABEL org.label-schema.name="fopina/fluent-bit-plugin-dev"
+LABEL org.label-schema.version=$BUILD_VERSION
+
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \

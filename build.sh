@@ -4,7 +4,7 @@ set -e
 
 cd $(dirname $0)
 
-VERSION="1.4.2.1"
+VERSION="1.6.10.1"
 
 docker build \
        -t fopina/fluent-bit-plugin-dev:${VERSION} \

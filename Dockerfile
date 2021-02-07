@@ -10,6 +10,8 @@ LABEL org.label-schema.vcs-url="https://github.com/fopina/docker-fluent-bit-plug
 LABEL org.label-schema.name="fopina/fluent-bit-plugin-dev"
 LABEL org.label-schema.version=$BUILD_VERSION
 
+ARG FLUENT_VERSION=1.6.10
+
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
@@ -33,10 +35,10 @@ RUN apt-get update && \
 WORKDIR /usr/src/fluentbit
 
 RUN curl -Lo /tmp/fluentbit.tgz \
-         https://github.com/fluent/fluent-bit/archive/v1.4.2.tar.gz \
+         https://github.com/fluent/fluent-bit/archive/v${FLUENT_VERSION}.tar.gz \
     && tar xf /tmp/fluentbit.tgz 
 
-WORKDIR /usr/src/fluentbit/fluent-bit-1.4.2
+WORKDIR /usr/src/fluentbit/fluent-bit-${FLUENT_VERSION}
 
 RUN cmake .
 

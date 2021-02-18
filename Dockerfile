@@ -10,7 +10,7 @@ LABEL org.label-schema.vcs-url="https://github.com/fopina/docker-fluent-bit-plug
 LABEL org.label-schema.name="fopina/fluent-bit-plugin-dev"
 LABEL org.label-schema.version=$BUILD_VERSION
 
-ARG FLUENT_VERSION=1.6.10
+ARG FLUENT_VERSION=1.7.0
 
 ENV DEBIAN_FRONTEND noninteractive
 

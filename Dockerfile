@@ -1,4 +1,4 @@
-FROM debian:stretch as builder
+FROM debian:bullseye as builder
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -9,7 +9,7 @@ RUN apt-get update && \
       make \
       curl \
       unzip \
-      libssl1.0-dev \
+      libssl-dev \
       libasl-dev \
       libsasl2-dev \
       pkg-config \

@@ -18,7 +18,7 @@ cd fluent-bit-plugin
 docker run --rm -ti \
            -v $(pwd):/myplugin \
            ghcr.io/fopina/fluent-bit-plugin-dev:v1 \
-           cmake -DFLB_SOURCE=/usr/src/fluentbit/fluent-bit-1.9.10/ -DPLUGIN_NAME=out_stdout2 ../
+           cmake -DFLB_SOURCE=/usr/src/fluentbit/fluent-bit/ -DPLUGIN_NAME=out_stdout2 ../
 docker run --rm -ti \
            -v $(pwd):/myplugin \
            ghcr.io/fopina/fluent-bit-plugin-dev:v1 \

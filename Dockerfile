@@ -42,4 +42,6 @@ WORKDIR /usr/src/fluentbit/fluent-bit-${FLUENT_VERSION}
 
 RUN cmake .
 
+RUN ln -s /usr/src/fluentbit/fluent-bit-${FLUENT_VERSION}/ /usr/src/fluentbit/fluent-bit
+
 WORKDIR /myplugin/build

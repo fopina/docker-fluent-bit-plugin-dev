@@ -17,11 +17,11 @@ git clone https://github.com/fluent/fluent-bit-plugin
 cd fluent-bit-plugin
 docker run --rm -ti \
            -v $(pwd):/myplugin \
-           ghcr.io/fopina/fluent-bit-plugin-dev:v1 \
-           cmake -DFLB_SOURCE=/usr/src/fluentbit/fluent-bit-1.4.2/ -DPLUGIN_NAME=out_stdout2 ../
+           ghcr.io/fopina/fluent-bit-plugin-dev:latest \
+           cmake -DFLB_SOURCE=/usr/src/fluentbit/fluent-bit/ -DPLUGIN_NAME=out_stdout2 ../
 docker run --rm -ti \
            -v $(pwd):/myplugin \
-           ghcr.io/fopina/fluent-bit-plugin-dev:v1 \
+           ghcr.io/fopina/fluent-bit-plugin-dev:latest \
            make
 ```
 

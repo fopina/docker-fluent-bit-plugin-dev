@@ -43,5 +43,5 @@ jobs:
           build-args: |
             BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') \
             BUILD_VERSION=${{ steps.prepare.outputs.tag_name }} \
-            FLUENT_VERSION=1.9.2
-          tags: ghcr.io/fopina/fluent-bit-plugin-dev:${{ steps.prepare.outputs.tag_name }},ghcr.io/fopina/fluent-bit-plugin-dev:latest
+            FLUENT_VERSION=1.9.10
+          tags: ghcr.io/fopina/fluent-bit-plugin-dev:${{ steps.prepare.outputs.tag_name }},ghcr.io/fopina/fluent-bit-plugin-dev:v1

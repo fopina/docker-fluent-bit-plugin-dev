@@ -18,6 +18,7 @@ RUN apt-get update && \
       flex \
       ca-certificates \
       bison \
+      libyaml-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/fluentbit

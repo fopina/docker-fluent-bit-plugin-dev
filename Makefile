@@ -1,4 +1,4 @@
-dev: FLUENT_VERSION=1.9.2
+dev: FLUENT_VERSION=1.9.10
 dev:
 	docker build \
        	   -t fopina/fluent-bit-plugin-dev:dev \

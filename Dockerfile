@@ -1,4 +1,4 @@
-FROM debian:bullseye as builder
+FROM debian:bookworm AS builder
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -23,7 +23,7 @@ RUN apt-get update && \
 
 WORKDIR /usr/src/fluentbit
 
-ARG FLUENT_VERSION=2.1.2
+ARG FLUENT_VERSION=3.1.9
 ARG BUILD_DATE
 ARG BUILD_VERSION
 

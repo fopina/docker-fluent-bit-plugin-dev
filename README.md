@@ -29,7 +29,7 @@ And `build/flb-out_stdout2.so` will be created. It can be quickly tested with fl
 
 ```
 docker run --rm -v $(pwd):/myplugin \
-           fluent/fluent-bit:2.1.2 \
+           fluent/fluent-bit:3.1.9 \
            /fluent-bit/bin/fluent-bit \
            -e /myplugin/flb-out_stdout2.so -i dummy -o stdout2
 ```

@@ -1,4 +1,4 @@
-name: publish to dockerhub
+name: publish
 
 on:
     push:
@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build:
-    name: publish to dockerhub
+    name: publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
